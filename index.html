@@ -2,15 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>User Input Form and Table</title>
+		<title>Excel-Assistant</title>
 		<!-- Link to the material design font and CSS styles -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<h1>User Input Form</h1>
@@ -42,7 +41,6 @@
 				onchange="readExcel(this.files[0])"
 			/>
 		</form>
-
 		<!-- User table -->
 		<table id="user-table">
 			<tr>
@@ -51,9 +49,12 @@
 				<th>Country</th>
 				<th>Has Proof</th>
 				<th>Facebook Link</th>
+				<th>Delete</th>
 			</tr>
 		</table>
-		<script src="./papaparse.min.js"></script>
-		<script src="./script.js"></script>
+
+		<!-- Link to the JavaScript file -->
+		<script src="papaparse.min.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
